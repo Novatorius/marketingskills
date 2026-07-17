@@ -23,3 +23,6 @@ video/
 *~
 .idea/
 .vscode/
+
+# Generated Navigator KB context (regenerate with: navigator kb context)
+.claude/kb-context.md
