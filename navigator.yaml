@@ -1,0 +1,18 @@
+initiative: novatorius
+ci:
+  test: ./validate-skills.sh
+knowledgeDependencies:
+  - initiative: phpnomad
+    description: "Engineering standards and doctrine"
+    # Curated for a content/skills repo: no application code, so the
+    # unit/integration/e2e testing, taxonomy-and-SDK, and failure/logging
+    # doctrine do not apply. Only doctrine that nearly every skills change
+    # touches is critical; the rest stays on-demand via KB search.
+    critical:
+      - global-definition-of-done
+      - global-silent-failure-rules
+      - global-pattern-decidability-doctrine
+  - initiative: navigator
+    description: "Autonomous worker conventions"
+    critical:
+      - conventions-autonomous-worker
