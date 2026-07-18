@@ -4,15 +4,14 @@ ci:
 knowledgeDependencies:
   - initiative: phpnomad
     description: "Engineering standards and doctrine"
+    # Curated for a content/skills repo: no application code, so the
+    # unit/integration/e2e testing, taxonomy-and-SDK, and failure/logging
+    # doctrine do not apply. Only doctrine that nearly every skills change
+    # touches is critical; the rest stays on-demand via KB search.
     critical:
       - global-definition-of-done
-      - global-failure-and-logging-doctrine
-      - global-unit-testing-standards-modifying-existing-tests
-      - global-taxonomy-and-sdk-doctrine
-      - global-integration-testing-standards-introduction
-      - global-e2e-testing-standards-introduction
-      - global-pattern-decidability-doctrine
       - global-silent-failure-rules
+      - global-pattern-decidability-doctrine
   - initiative: navigator
     description: "Autonomous worker conventions"
     critical:
